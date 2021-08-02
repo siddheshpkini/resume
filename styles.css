@@ -303,15 +303,35 @@ display: flex;
 }
 
 footer{
+    position: fixed;
+    bottom: 0;
+    z-index: 1500;
+    width: 100%;
     display:flex;
     justify-content: space-around;
     border-top: 1px solid rgba(232,232,232,0.5);
-    background-color:#FFFFFF;
+    background-color:rgba(141,135,65, 0.8);
+    height: 60px;
 }
 footer p{
-    margin:15px 5px;
-    color:#5f5f5f;Thank you for visiting...
+    margin:10px 10px;
+    color:#444040;
+    padding: 10px 10px 10px 10px;
     font-size: 0.9rem;
+}
+
+.button-big i{
+margin: 10px 10px;
+padding: 10px 10px 10px 10px;
+display: flex ;
+color: #747474;
+}
+
+
+
+.button-big i:hover{
+    flex-grow: 0.5;
+    color: #0f0f0f;
 }
 
 #contact h3{
@@ -369,10 +389,7 @@ footer p{
         opacity: 0.7;
         font-family: cursive;
     }
-    .recent-heading{
-        text-align:center;
-        padding:0px 15px;
-    }
+    
     
 }
 @media(max-width:720px){
@@ -548,23 +565,32 @@ footer p{
         height:200px;
     }
     footer{
+        position: relative;
         justify-content: center;
-        padding:10px 20px;
+        padding:10px 10px;
+        background-color:rgba(141,135,65, 0.8);
+        height: 300px;
     }
     footer p{
-        text-align: center;
-    }
-    .recent-btn{
-        margin:0px;
+        text-align: left;
     }
     #contact h3{
         font-size: 1.5rem;;
     }
+    .button-big{
+        margin-top: 0px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer{
+        width: 100%;
+        display:inline-block;
+        vertical-align: top;
+    }
 }
 @media(max-width:530px){
-    .contact-input{
-        width:90%;
-    }
+    
     .skill-img{
         display:none;
     }
